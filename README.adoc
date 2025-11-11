@@ -190,7 +190,17 @@ image::sample01_class_01.png[{full-width}]
 [source,shell]
 ----
 git status
-// ここに上記コマンドの実行結果（画像ではなくテキスト）を貼り付ける
+// On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.adoc
+        modified:   models/sample04.asta
+        deleted:    models/sample04.asta.lock
+
+no changes added to commit (use "git add" and/or "git commit -a")
 ----
 
 問題がなければプッシュしなさい。問題があれば、TAに相談しなさい。
@@ -198,7 +208,17 @@ git status
 [source,shell]
 ----
 git push
-// ここに上記コマンドの実行結果（画像ではなくテキスト）を貼り付ける
+// Username for 'https://github.com': ciko23007
+Password for 'https://ciko23007@github.com':
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 23.61 KiB | 1.03 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/cit-prjex-2025/sample-code-and-model-ciko23007.git
+   02eb61f..c105b3c  main -> main
 ----
 
 また、 `git log` を実行して過去の処理について確認しなさい。
